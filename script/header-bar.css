@@ -1,0 +1,57 @@
+header {
+    font-family: Arial, sans-serif;
+    background-color: #004d26;
+    color: white;
+    display: flex;  /* дочерние элементы будут гибкие */
+    justify-content: flex-end;  /* между дочерними элементами будут пробелы */
+    align-items: center;  /* выровнять все дочерние элементы, чтобы они были по центру по вертикале */
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;  /* Делаем nav флекс-контейнером */
+    justify-content: space-between;  /* Распределяем пространство между лого и списком */
+    align-items: center;  /* Центрируем элементы по вертикали */
+    width: 100%;  /* Растягиваем nav на всю ширину header */
+}
+
+nav img {
+    height: 2.5em;
+}
+
+nav ul {
+    list-style: none;  /* remove dots */
+    display: flex;  /* make inner elements flexiable */
+    gap: 50px; /* задает расстояние между дочерними элементами внутри флекс-контейнера */
+    padding: 0;
+    margin: 0;
+    margin-left: auto;  /* Прижимает список к правому краю */
+}
+
+nav ul li {
+    display: inline;  /* каждый элемент будет справа от последнего */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;  /* remove underline for link */
+    font-weight: bold;
+    padding: 20px 10px;  /* расстаяние между контентом элемента а и границей элемента а 1 число = up&down, 2 = left&right */
+    transition: background-color 0.3s;
+    border-radius: 15px;  /* радиус окружности, которую мы вписываем в квадрат на пример */
+}
+
+nav ul li a:hover {
+    background-color: #00974a;
+}
+
+.active-menu-item {
+    background-color: #027138;
+    border-radius: 15px;
+}
+
+#cat-logo-background {
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
